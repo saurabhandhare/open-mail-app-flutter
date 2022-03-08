@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" />
+
+  <style type="text/tailwindcss">
+    @layer utilities {
+        table, thead, tbody, th, tr, td {
+          @apply border-2 border-black;
+        }
+
+        td, th {
+          @apply p-2
+        }
+
+        .icon-lay {
+          @apply flex items-center justify-center border-0;
+        }
+    }
+  </style>
+  
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'success-color': '#4CAF50',
+            'info-color': '#2196F3',
+            'warning-color': '#FFC107',
+            'suspicious-color': '#B71C1C',
+            'failed-color': '#FF6F00',
+            'default-color': '#2196F3',
+          },
+        }
+      }
+    }
+  </script>
+
+</head>
+<body>
+
+  <div class="flex justify-center m-3">
+    <h1 class="font-bold text-3xl">ICONs</h1>
+  </div>
+  <div class="flex justify-center items-center">
+    <table class="table-auto">
+      <thead>
+        <tr>
+          <th>Sr. No.</th>
+          <th>Icon Type</th>
+          <th>Icon Value</th>
+          <th>Icon Color</th>
+          <th>Icon</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>far</td>
+          <td>fa-check-circle</td>
+          <td>#4CAF50</td>
+          <td class="icon-lay"><i class="far fa-check-circle text-success-color text-3xl"></i></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>far</td>
+          <td>fa-check-circle</td>
+          <td>#4CAF50</td>
+          <td class="icon-lay"><i class="far fa-check-circle text-success-color text-3xl"></i></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>material-icons</td>
+          <td>info_outline</td>
+          <td>#2196F3</td>
+          <td class="icon-lay">
+            <i class="material-icons text-info-color" style="font-size: 35px">info_outline</i>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+</body>
+</html>
+
+
